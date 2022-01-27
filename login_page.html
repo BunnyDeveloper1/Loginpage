@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .outter {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            /* background-image: linear-gradient(to top left, #27d2ce, #00c7fa, #58b2ff, #c490f8, #ff69b4); */
+            background-image: linear-gradient(to right top, #d16ba5, #b55fa2, #97559e, #774c97, #54448f, #46438e, #35438d, #1e428c, #254995, #2c509d, #3358a6, #395faf);
+        }
+
+        .login_container {
+
+            position: relative;
+            top: 20px;
+            width: 380px;
+            height: 450px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 15px 15px 50px 1px #1c0e4b;
+        }
+
+        .img_container {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: red;
+            bottom: 400px;
+            left: 150px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/000/388/900/original/modern-company-logo-design-vector.jpg);
+            background-size: contain;
+        }
+
+        .forget {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 225px;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .fields {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text_box {
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            margin-top: 20px;
+            border: none;
+            border-bottom: 2px solid #00c7fa;
+            outline: none;
+            padding-left: 10px;
+        }
+
+        .text_box:focus {
+
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #3358a6;
+        }
+
+        .text_box:active {
+            border: 3px solid #00c7fa;
+        }
+
+        .btn_login {
+            margin-top: 25px;
+            width: 280px;
+            height: 45px;
+            border-radius: 20px;
+            font-size: 20px;
+            color: white;
+            border: none;
+            background-image: linear-gradient(to right top, #d16ba5, #b55fa2, #97559e, #774c97, #54448f, #46438e, #35438d, #1e428c, #254995, #2c509d, #3358a6, #395faf);
+        }
+
+        .btn_login:hover {
+            border: 3px solid #54448f;
+            box-shadow: 5px 5px 10px #97559e;
+        }
+
+
+        header{
+            background-color: transparent;
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            top:0;
+            padding-top: 10px;
+            display: block;
+
+        }
+        ul li{
+            display: inline;
+            padding-left: 10px;  
+            margin-left: 20px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outter">
+        <header>
+            <nav>
+                <ul>
+                    <li><img src="https://static.vecteezy.com/system/resources/previews/000/388/900/original/modern-company-logo-design-vector.jpg" alt="company_logo" width="40px" height="40px"></li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="login_container">
+
+            <div class="img_container">
+
+            </div>
+            <div class="forget">
+                <p>Welcome back!<br> Login to access the services.<br>
+                    Did you <a href="#">forget your password?</a></p>
+            </div>
+            <div class="fields">
+                <input type="email" placeholder="Enter your email" class="text_box">
+                <input type="password" placeholder="Enter your password" class="text_box">
+                <button class="btn_login">Login</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
